@@ -1,0 +1,286 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+
+.parent__container{
+  display: flex;
+  height: 100vh;
+  padding: 10px;
+  max-width: 1920px;
+  margin: auto;
+  /* width: 100%; */
+}
+
+.parent__container p{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.company__details{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.company__logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(144, 144, 249);
+}
+
+.company__logo img{
+  width: 130px;
+}
+
+.company__logo span{
+  display: inline-block;
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.form__Container{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 45%;
+  /* background-color: red; */
+  margin: 10% 0 0 0;
+  padding: 10px;
+}
+
+.cards__container{
+  padding: 10px;
+  margin: 10% 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  height: fit-content;
+  gap: 20px;
+}
+
+.card{
+  background-color: white;
+  border-radius: 10px;
+  background-color: rgb(19, 19, 93);
+  color: white;
+  padding: 20px;
+  max-width: 350px;
+  height: fit-content;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card__header{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* justify-content: flex-start; */
+}
+
+.card__header i{
+  font-size: 3rem;
+}
+
+.card__title{
+  color: rgb(103, 103, 177);
+}
+
+.card__content p{
+  font-size: 1rem;
+}
+
+.contact__me__container{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.contact__me__body{
+  display: flex;
+  gap: 15px;
+}
+
+.input__field{
+  padding: 8px;
+  width: 350px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid rgb(150, 146, 146);
+  font-size: 1.2rem;
+}
+
+.input__field::placeholder{
+  color: rgb(75, 73, 73);
+  font-weight: 500;
+}
+
+.submit__btn{
+  background-color: rgb(255, 106, 0);
+  color: white;
+  width: 170px;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.spinner_green{
+  width: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.submit__btn:hover{
+  background-color: rgb(255, 68, 0);;
+}
+
+.submit__btn:active{
+  transform: scale(90%);
+  transition: transform 50ms ease-in;
+}
+
+.contact__me__mobile__view{
+  display: none;
+}
+
+.error__message{
+  color: red;
+  font-size: 1rem !important;
+}
+
+.success__message{
+  color: green;
+  font-size: 1rem !important;
+}
+
+
+
+@media screen and (max-width: 720px){
+  .parent__container{
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .form__Container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .parent__container{
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    /* width: 100%; */
+  }
+
+  .form__Container{
+    width: 100%;
+    margin: 0;
+  }
+
+  .cards__container{
+    width: 100%;
+    grid-template-columns: auto;
+    margin: 0;
+    gap: 25px;
+  }
+
+  /* ******************** CARD CSS *********************** */
+  .card{
+    margin: auto;
+    max-width: 310px;
+  }
+
+  .card__header{
+    gap: 35px;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  
+  .card__header i{
+    font-size: 3rem;
+  }
+  
+  .card__title{
+    font-size: 1.5rem;
+    color: rgb(103, 103, 177);
+  }
+  
+  .card__content p{
+    font-size: 1.3rem;
+  }
+
+  .contact__me__container{
+    text-align: center;
+  }
+
+  .contact__me__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input__field{
+    padding: 8px;
+    width: 90%;
+    border: 1px solid rgb(150, 146, 146);
+    font-size: 1.3rem;
+  }
+
+  .submit__btn{
+    font-size: 1.3rem;
+    padding: 10px;
+    width: 130px;
+  }
+
+  .contact__me__desktop__view{
+    display: none;
+  }
+  
+  .contact__me__mobile__view{
+    display: block;
+  }
+
+  .company__details p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .company__logo{
+    justify-content: center;
+    gap: 10px;
+    color: rgb(144, 144, 249);
+  }
+
+  h2{
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  .company__logo img{
+    width: 50px;
+  }
+  
+  .company__logo span{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+}
