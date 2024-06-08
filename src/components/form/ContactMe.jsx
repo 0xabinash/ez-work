@@ -12,7 +12,7 @@ const ContactMe = () => {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "http://34.225.132.160:8002/api",
+        "http://34.225.132.160:8002/api/",
         {email: email}
       );
       setIsError("");
